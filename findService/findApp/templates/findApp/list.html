@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<div class="row my-5">
+    <div class="col">
+        <h2 class="my-5">Список авто</h2>
+    </div>
+</div>
+
+<div class="row my-5">
+    {% if autos %}
+        {%for auto in autos %}
+            <div class="col-12 text-left">
+                <h4><a href="{{auto.url}}">{{auto.title}}</a></h4>
+                <p>{{auto.description}}</p><br>
+                <p>{{auto.price}}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <div class="col-12">
+            <h2>По Вашему запросу ничего не найдено!</h2>
+        </div>
+    {% endif %}
+</div>
+{% endblock content%}

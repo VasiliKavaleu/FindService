@@ -2,6 +2,19 @@ from django.shortcuts import render
 from .parsing import *
 from .models import *
 from django.db import IntegrityError
+import datetime
+
+def index(request):
+    return render(request, 'base.html')
+
+def list_auto_today(request):
+    today = datetime.date.today()
+    city = City.objects.get(name='Минск')
+    carModel = CarModel.objects.get(name='Seat')
+    qs = Auto.objects.filter(city=city.id, carModel=carModel.id, timestamp=today)
+    if qs:
+        return render(request, 'findApp/list.html', {"autos": qs})
+    return render(request, 'findApp/list.html')
 
 def home(request):
     city = City.objects.get(name='Минск')
@@ -25,4 +38,4 @@ def home(request):
             auto.save()
         except IntegrityError:
             pass
-    return render(request, 'base.html', {"autos":autos})
+    return render(request, 'findApp/list.html', {"autos":autos})
