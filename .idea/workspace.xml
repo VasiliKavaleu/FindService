@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b244554a-94ed-460f-9138-da5b5280a61e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/findApp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/findService/findApp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/findApp/templates/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/findApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/findService/findApp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findService/findApp/templates/findApp/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/findService/findApp/templates/findApp/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/findService/findApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/findService/findApp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/findService/findService/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/findService/findService/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/findService/findService/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/findService/findService/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findService/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/findService/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,9 +69,9 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="592" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1588706369479">
+    <state x="592" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1588883035327">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="592" y="209" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1588706369479" />
+    <state x="592" y="209" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1588883035327" />
   </component>
 </project>
