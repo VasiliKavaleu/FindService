@@ -42,8 +42,6 @@ def home(request):
 
     url_qs = Url.objects.filter(city=city, carModel=carModel)
     url_av = url_qs.get(site=site.get(name='av.by'))
-
-
     autos = av(url_av.url_adress)
 
     # a = Auto.objects.filter(city=city.id, carModel=carModel.id).values('url')
