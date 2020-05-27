@@ -10,7 +10,7 @@ except:
     logging.exception('Unable to open DB -{}'.format(today))
 else:
     cur = conn.cursor()
-    cur.execute("""SELECT city_id, carModel_id FROM subscribers_subscriber WHERE is_active=%s;""", (True,))
+    cur.execute("""SELECT city_id, "carModel_id" FROM subscribers_subscriber WHERE is_activ=%s;""", (True,))
     cities_qs = cur.fetchall()
     print(cities_qs)
 
