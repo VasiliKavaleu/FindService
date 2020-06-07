@@ -4,6 +4,7 @@ import datetime
 from findService.secret import DB_NAME, DB_USER, DB_PASSWORD, DB_HOST, MAILGUN_KEY, API, FROM_EMAIL
 from findApp.parsing import *
 import requests
+
 today = datetime.date.today()
 
 

@@ -14,3 +14,7 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'findService.settings')
 
 application = get_wsgi_application()
+
+#Heroku settings for static files
+from whitenoise.django import DjangoWhiteNoise
+application = DjangoWhiteNoise(application)

@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 # Quick-start development settings - unsuitable for production
@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ga8xtcu4rdc)gfd8cl71oz9msmw+gitwu^$xsun4*a=p%oduv6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'findService.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-from .secret import DB_NAME, DB_USER, DB_PASSWORD, DB_HOST
+from findService.secret import DB_NAME, DB_USER, DB_PASSWORD, DB_HOST
 
 DATABASES = {
     'default': {
@@ -128,4 +128,9 @@ STATIC_URL = '/static/'
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [STATIC_DIR]
 
-# STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'staticfiles')
+
+import dj_database_url
+
+db = dj_database_url.config()
+DATABASES['default'].update(db)
