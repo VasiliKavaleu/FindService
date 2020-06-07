@@ -1,0 +1,55 @@
+{% extends 'index1.html' %}
+
+{% block content_auto %}
+<div class="row my-5">
+    <div class="col text-center">
+        <h2 class="my-5">Список авто</h2>
+    </div>
+</div>
+
+<div class="row my-5">
+    {% if autos %}
+        <div class="col text-center">
+            <h2>Авто по запросу: {{carModel}}, {{city}}</h2>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+            {%for auto in autos %}
+                <div class="col-12 text-left">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <a href="{{auto.url}}">
+                                <div class="row">
+                                    <p>{{auto.title}}</p>
+                                    <p>{{auto.description}}</p><br>
+                                    <p>{{auto.price}}</p>
+                                        <div class="col-12 text-right">
+                                            <p><small>{{auto.timestamp | date:"SHORT_DATE_FORMAT"}}</small></p>
+                                        </div>
+                                </div>
+                            </a>
+
+                        </li>
+
+                    </ul>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="col-12 text-center">
+            <h2>По Вашему запросу ничего не найдено!</h2>
+        </div>
+    {% endif %}
+</div>
+
+
+<!--<div class="row">-->
+<!--    <div class="col">-->
+<!--        <form method="get" action="">-->
+<!--            {{form.as_p}}-->
+<!--            <button type="submit" class="btn btn-success">Показать</button>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--</div>-->
+{% endblock content_auto %}
+
+

@@ -15,17 +15,25 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from findApp import views
+from findApp.views import *
 from subscribers.views import *
+from . import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),                     # пустая страница бутстрапа
-    path('list/', views.list_auto_today),       # вакансии добавленные сегодня без выбора
-    path('home/', include('findApp.urls')),     # запускает парсеп
-    path('findauto', views.list_auto, name='list'),          # отображение формы
-
+    path('', index, name='index'),  # пустая страница бутстрапа
+    path('findauto', list_auto, name='list'),  # отображение формы
     path('create', SubscriberCreate.as_view(), name='create'), # форма регистрации
     path('login/', login_subscriber, name='login'),
     path('update/', update_subscriber, name='update'),
+    path('contact/', contact_admin, name='contact'),
+
+
+    path('list/', list_auto_today),       # вакансии добавленные сегодня без выбора
+    path('home/', include('findApp.urls')),     # запускает парсеп
+
+
 ]
+
+# if settings.DEBUG:
+#     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

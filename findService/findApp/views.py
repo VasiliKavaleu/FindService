@@ -7,16 +7,10 @@ import datetime
 from findApp.forms import FindAutoForm
 
 def index(request):
-    return render(request, 'base.html')
+    form = FindAutoForm
 
-def list_auto_today(request):
-    today = datetime.date.today()
-    city = City.objects.get(name='Минск')
-    carModel = CarModel.objects.get(name='Seat')
-    qs = Auto.objects.filter(city=city.id, carModel=carModel.id, timestamp=today)
-    if qs:
-        return render(request, 'findApp/list.html', {"autos": qs})
-    return render(request, 'findApp/list.html')
+    return render(request, 'index1.html', {'form' : form})
+    # return render(request, 'index.html', {'form' : form})
 
 def list_auto(request):
     today = datetime.date.today()
@@ -29,11 +23,29 @@ def list_auto(request):
             raise Http404('Страница не найдена')
         context = {}
         context['form'] = form
-        qs = Auto.objects.filter(city=city_id, carModel=carModel_id, timestamp=today)
+        qs = Auto.objects.filter(city=city_id, carModel=carModel_id) #timestamp=today
         if qs:
             context['autos'] = qs
-            return render(request, 'findApp/list.html', context)
-    return render(request, 'findApp/list.html', {'form':form})
+            context['city'] = qs[0].city.name
+            context['carModel'] = qs[0].carModel.name
+            return render(request, 'findApp/list1.html', context)
+    return render(request, 'findApp/list1.html', {'form':form})
+
+
+
+
+
+
+def list_auto_today(request):
+    today = datetime.date.today()
+    city = City.objects.get(name='Минск')
+    carModel = CarModel.objects.get(name='Seat')
+    qs = Auto.objects.filter(city=city.id, carModel=carModel.id, timestamp=today)
+    if qs:
+        return render(request, 'findApp/list.html', {"autos": qs})
+    return render(request, 'findApp/list.html')
+
+
 
 def home(request):
     city = City.objects.get(name='Минск')

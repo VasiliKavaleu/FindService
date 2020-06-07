@@ -1,0 +1,46 @@
+{% extends 'base1.html' %}
+{% block title %} Edit users data{% endblock title %}
+{% block content%}
+
+	<div class="collapse navbar-collapse" id="navbarmidle">
+		<div class="searchtxt">
+			<h1>CONTACT US</h1>
+		</div>
+	</div>
+	<form method="post" action="">
+        {% csrf_token %}
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="form-group col-md-3 mx-auto">
+				<label  for="email" style="color:white">EMAIL</label>
+				{{form.email}}
+			</div>
+
+			<div class="col-md-1"></div>
+
+			<div class="form-group col-md-3 mx-auto">
+				<label for="city" style="color:white">CITY</label>
+				{{form.city}}
+			</div>
+			<div class="col-md-1"></div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="form-group col-md-3 mx-auto" style="background:transparent">
+				<label for="carModel" style="color:white">CAR BRAND</label>
+				{{form.carModel}}
+			</div>
+			<div class="col-md-1"></div>
+            <button type="submit" class="btn btn-primary mb-2" style="margin-top:22px;">Send</button>
+		</div>
+
+
+
+
+	</form>
+
+
+
+{% endblock content%}
