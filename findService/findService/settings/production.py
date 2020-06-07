@@ -75,7 +75,13 @@ WSGI_APPLICATION = 'findService.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-from findService.secret import DB_NAME, DB_USER, DB_PASSWORD, DB_HOST
+try:
+    from findService.secret import DB_NAME, DB_USER, DB_PASSWORD, DB_HOST
+except:
+    DB_NAME = os.environ.get('DB_NAME')
+    DB_USER = os.environ.get('DB_USER')
+    DB_PASSWORD = os.environ.get('DB_PASSWORD')
+    DB_HOST = os.environ.get('DB_HOST')
 
 DATABASES = {
     'default': {
