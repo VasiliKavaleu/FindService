@@ -39,7 +39,11 @@ def login_subscriber(request):
 def update_subscriber(request):
     if request.method == 'GET' and request.session.get('email', False):     # если запрос гет и в сессии email
         email = request.session.get('email')
+        print(email)
         qs =  Subscriber.objects.filter(email=email).first()                       # получение данных из бд
+        if not qs:
+            return redirect('login') # TESTING
+
         form = SubscriberHiddenEmailForm(initial={'email':qs.email, 'city':qs.city,    #
                                                   'carModel':qs.carModel, 'password':qs.password,
                                                   'is_activ':qs.is_activ})                #заполняем данными форму
