@@ -5,6 +5,7 @@ from .models import *
 from django.db import IntegrityError
 import datetime
 from findApp.forms import FindAutoForm
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 def index(request):
     form = FindAutoForm
@@ -24,10 +25,46 @@ def list_auto(request):
         context = {}
         context['form'] = form
         qs = Auto.objects.filter(city=city_id, carModel=carModel_id) #timestamp=today
+        paginator = Paginator(qs, 5)
+        page = request.GET.get('page')
+        try:
+            qs_paginator = paginator.page(page)
+        except PageNotAnInteger:
+            qs_paginator = paginator.page(1)
+        except EmptyPage:
+            qs_paginator = paginator.page(paginator.num_pages)
+
+        print(paginator.page_range)
+
+        is_qs_paginated = qs_paginator.has_other_pages()
+
+        if qs_paginator.has_previous():
+            prev_page = f"&page={qs_paginator.previous_page_number()}"
+        else:
+            prev_page = ""
+        if qs_paginator.has_next():
+            next_page = f"&page={qs_paginator.next_page_number()}"
+        else:
+            next_page = ""
+        # if qs_paginator:
+        #     context = {
+        #         'is_qs_paginated' : is_qs_paginated,
+        #         'next_page' : next_page,
+        #         'prev_page' : prev_page,
+        #         'autos' : qs_paginator,
+        #         'city' : qs_paginator[0].city,
+        #         'carModel' : qs_paginator[0].carModel
+        #     }
         if qs:
-            context['autos'] = qs
-            context['city'] = qs[0].city.name
-            context['carModel'] = qs[0].carModel.name
+            # context['paginator'] = paginator
+            context['is_qs_paginated'] = is_qs_paginated
+            context['prev_page'] = prev_page
+            context['next_page'] = next_page
+            context['autos'] = qs_paginator
+            context['city'] = qs_paginator[0].city
+            context['carModel'] = qs_paginator[0].carModel
+
+
             return render(request, 'findApp/list1.html', context)
     return render(request, 'findApp/list1.html', {'form':form})
 

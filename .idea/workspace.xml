@@ -3,7 +3,102 @@
   <component name="ChangeListManager">
     <list default="true" id="b244554a-94ed-460f-9138-da5b5280a61e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/findService/settings/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/findService/findService/settings/production.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findService/findApp/templates/findApp/list1.html" beforeDir="false" afterPath="$PROJECT_DIR$/findService/findApp/templates/findApp/list1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findService/findApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/findService/findApp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findService/findService/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/findService/findService/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findService/static/newstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/findService/static/newstyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findService/static/style/mystyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/findService/static/style/mystyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findService/templates/base1.html" beforeDir="false" afterPath="$PROJECT_DIR$/findService/templates/base1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abw.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/av.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chromedriver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/benz.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/border.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/car1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/car2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/car3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/car4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/car5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/car6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/car7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/car8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/collectionlogo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/compicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/featurporch.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/featurporch1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/logo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/newsletter.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/oldcar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/porche.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/newstyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/bootstrap-3.3.6-dist/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/bootstrap-3.3.6-dist/css/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/bootstrap-3.3.6-dist/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/bootstrap-3.3.6-dist/css/bootstrap-theme.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/bootstrap-3.3.6-dist/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/bootstrap-3.3.6-dist/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/bootstrap-3.3.6-dist/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/bootstrap-3.3.6-dist/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/bootstrap-3.3.6-dist/fonts/BebasNeue.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/bootstrap-3.3.6-dist/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/bootstrap-3.3.6-dist/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/bootstrap-3.3.6-dist/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/bootstrap-3.3.6-dist/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/bootstrap-3.3.6-dist/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/bootstrap-3.3.6-dist/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/bootstrap-3.3.6-dist/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/bootstrap-3.3.6-dist/js/jquer.1.10.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/bootstrap-3.3.6-dist/js/jquery.1.11.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/bootstrap-3.3.6-dist/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/bootstrap-3.3.6-dist/js/npm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/HELP-US-OUT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/font-awesome-4.5.0/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/fonts/BebasNeue-Regular.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/fonts/OpenSans-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/fonts/OpenSans-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/fonts/OpenSans-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/fonts/OpenSans-Semibold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/fonts/Roboto-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/js/isotope.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/js/myscript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/source/js/selectordie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/style/contactstyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/style/mystyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/style/slider.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +159,11 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="699" y="355" width="583" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1591531451786" />
-    <state x="681" y="189" width="424" height="491" key="FileChooserDialogImpl" timestamp="1591482538420">
+    <state x="681" y="189" width="424" height="491" key="FileChooserDialogImpl" timestamp="1591739070401">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="495" y="141" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1589225553401" />
-    <state x="681" y="189" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1591482538420" />
+    <state x="681" y="189" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1591739070401" />
     <state x="268" y="36" width="1022" height="737" key="SettingsEditor" timestamp="1590529543869">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>

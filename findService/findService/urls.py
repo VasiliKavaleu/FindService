@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),  # пустая страница бутстрапа
     path('findauto', list_auto, name='list'),  # отображение формы
+
     path('create', SubscriberCreate.as_view(), name='create'), # форма регистрации
     path('login/', login_subscriber, name='login'),
     path('update/', update_subscriber, name='update'),
