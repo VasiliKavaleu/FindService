@@ -1,16 +1,34 @@
-{% extends 'index1.html' %}
+{% extends 'base2.html' %}
+
+{% block content%}
+	<div class="collapse navbar-collapse" id="navbarmidle">
+		<div class="searchtxt">
+			<h1>SEARCH AUTO</h1>
+		</div>
+	</div>
+	<form method="get" action="{% url 'list' %}">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="form-group col-md-3 mx-auto">
+				<label  for="city" style="color:white">CITY</label>
+				{{form.city}}
+			</div>
+			<div class="col-md-1"></div>
+			<div class="form-group col-md-3 mx-auto">
+				<label for="model" style="color:white">СAR BRAND</label>
+				{{form.carModel}}
+			</div>
+			<div class="col-md-1"></div>
+			<button type="submit" class="btn btn-primary mb-2" style="margin-top:22px;">Submit</button>
+		</div>
+	</form>
+{% endblock content%}
 
 {% block content_auto %}
 <div class="row my-5">
-    <div class="col text-center">
-        <h2 class="my-5">Список авто</h2>
-    </div>
-</div>
-
-<div class="row my-5">
     {% if autos %}
-        <div class="col text-center">
-            <h2>Авто по запросу: {{carModel}}, {{city}}</h2>
+        <div class="latestcars">
+            <h1 class="text-center">&bullet; Cars by request: {{carModel}} - {{city}} &bullet;</h1>
         </div>
         <div class="col-md-8 col-md-offset-2">
             {%for auto in autos %}
@@ -31,6 +49,7 @@
             {% endfor %}
 
             {% if is_qs_paginated %}
+                <div class="col text-center">
                 <nav aria-label="Page navigation example">
                     <div class="justify-content-center">
                       <ul class="pagination justify-content-center pagination-lg">
@@ -41,7 +60,6 @@
                                 <span class="sr-only">Previous</span>
                               </a>
                             </li>
-
                         {% for n in autos.paginator.page_range %}
                             {% if autos.number == n %}
                                 <li class="page-item active"><a class="page-link active" href="?city={{ city.id }}&carModel={{ carModel.id }}&page={{ n }}">{{ n }}</a></li>
@@ -49,7 +67,6 @@
                                 <li class="page-item"><a class="page-link active" href="?city={{ city.id }}&carModel={{ carModel.id }}&page={{ n }}">{{ n }}</a></li>
                             {% endif %}
                         {% endfor %}
-
                             <li class="page-item {% if not next_page %} disabled {% endif %}">
                               <a class="page-link" href="?city={{ city.id }}&carModel={{ carModel.id }}{{ next_page }}" aria-label="Next">
                                 <span aria-hidden="true">&raquo;</span>
@@ -60,16 +77,15 @@
                       </ul>
                     </div>
                 </nav>
+                </div>
             {% endif %}
         </div>
     {% else %}
-        <div class="col-12 text-center">
-            <h2>По Вашему запросу ничего не найдено!</h2>
+        <div class="latestcars">
+            <h2 class="text-center">&bullet; No results were found for your request! &bullet;</h2>
         </div>
     {% endif %}
 </div>
-
-
 {% endblock content_auto %}
 
 

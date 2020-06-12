@@ -6,16 +6,12 @@
 	<div class="navbar-header">
 		<button type="button" class="navbar-toggle collapsed textcostume" data-toggle="collapse" data-target="#navbarmidle" aria-expanded="false">
 				<h1>SEARCH TEXT</h1>
-<!--			<span class="sr-only">Toggle navigation</span>-->
-<!--			<span class="icon-bar"></span>-->
-<!--			<span class="icon-bar"></span>-->
-<!--			<span class="icon-bar"></span>-->
 		</button>
 	</div>
 	<div class="collapse navbar-collapse" id="navbarmidle">
-		<div class="searchtxt">
-			<h1>SEARCH AUTO</h1>
-		</div>
+			<div class="searchtxt">
+				<h1>SEARCH AUTO</h1>
+			</div>
 	</div>
 	<form method="get" action="{% url 'list' %}">
 		<div class="row">
@@ -24,9 +20,7 @@
 				<label  for="city" style="color:white">CITY</label>
 				{{form.city}}
 			</div>
-
 			<div class="col-md-1"></div>
-
 			<div class="form-group col-md-3 mx-auto">
 				<label for="model" style="color:white">СAR BRAND</label>
 				{{form.carModel}}
@@ -34,15 +28,6 @@
 			<div class="col-md-1"></div>
 			<button type="submit" class="btn btn-primary mb-2" style="margin-top:22px;">Submit</button>
 		</div>
-<!--		<div class="form-row text-center">-->
-<!--			<div class="col-12">-->
-
-<!--			</div>-->
-<!--		</div>-->
 	</form>
 {% endblock content%}
 
-
-
-{% block content_auto %}
-{% endblock content_auto %}

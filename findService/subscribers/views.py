@@ -37,30 +37,30 @@ def login_subscriber(request):
 
 
 def update_subscriber(request):
-    if request.method == 'GET' and request.session.get('email', False):     # если запрос гет и в сессии email
+    if request.method == 'GET' and request.session.get('email', False):
         email = request.session.get('email')
         print(email)
-        qs =  Subscriber.objects.filter(email=email).first()                       # получение данных из бд
+        qs =  Subscriber.objects.filter(email=email).first()
         if not qs:
             return redirect('login') # TESTING
 
         form = SubscriberHiddenEmailForm(initial={'email':qs.email, 'city':qs.city,    #
                                                   'carModel':qs.carModel, 'password':qs.password,
-                                                  'is_activ':qs.is_activ})                #заполняем данными форму
-        return render(request, 'subscribers/update1.html', {'form': form})                       # озвращаем фому пользов для измены
-    elif request.method == 'POST':                                                  # если польз внес измен-я и отправил
+                                                  'is_activ':qs.is_activ})
+        return render(request, 'subscribers/update1.html', {'form': form})
+    elif request.method == 'POST':
         email = request.session.get('email')
-        user = get_object_or_404(Subscriber, email=email)   #получить юзер объект с параметрами
-        form = SubscriberHiddenEmailForm(request.POST or None, instance=user)            #instance=user можно перезаписать данные,привязав к юзеру
-        if form.is_valid():                                                 # проверка формы
-            form.save()                                                      # сохраняем форму
-            messages.success(request, 'Данные успешно сохранены.')
+        user = get_object_or_404(Subscriber, email=email)
+        form = SubscriberHiddenEmailForm(request.POST or None, instance=user)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Data saved successfully.')
             del request.session['email']
             return redirect('login')
-        messages.error(request, 'Проверьте правильность заполнения формы!')
+        messages.error(request, 'Check that the form is filled out correctly!')
         return render(request, 'subscribers/update1.html', {'form': form})
     else:
-        return redirect('login')                                        #если вход произведен посредством изменения адреса в строке без сессии
+        return redirect('login')
 
 def contact_admin(request):
     if request.method == 'POST':

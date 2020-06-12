@@ -4,7 +4,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Find App</title>
-	<meta name="description" content="Scarica gratis il nostro Template HTML/CSS GARAGE. Se avete bisogno di un design per il vostro sito web GARAGE può fare per voi. Web Domus Italia">
 	<meta name="author" content="Web Domus Italia">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,70 +12,44 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'style/slider.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'style/mystyle.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'newstyle.css' %}">
-
 </head>
 <body>
-<!-- Header -->
 <div class="allcontain">
 	<div class="header">
 			<ul class="logreg">
 			</ul>
 	</div>
-	<!-- Navbar Up -->
 	<nav class="topnavbar navbar-default topnav">
 		<div class="container">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed toggle-costume" data-toggle="collapse" data-target="#upmenu" aria-expanded="false">
-					<span class="sr-only"> Toggle navigaion</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
 				<a class="navbar-brand logo" href="#"><img src="{% static 'image/logo1.png' %}" alt="logo"></a>
 			</div>	 
 		</div>
 		<div class="collapse navbar-collapse" id="upmenu">
-			<ul class="nav navbar-nav" id="navbarontop">
-				<li class="active"><a href="{% url 'index' %}">Главная</a> </li>
-				<li class="active"><a href="{% url 'create' %}">Подписаться</a> </li>
-				<li class="active"><a href="{% url 'update' %}">Редактировать</a> </li>
-				<li class="active"><a href="{% url 'contact' %}">Написать</a> </li>
-			</ul>
+			<div class="row">
+				<ul class="nav navbar-nav offset-md-2" id="navbarontop">
+					<li class="active"><a href="{% url 'index' %}">HOME</a> </li>
+					<li class="active"><a href="{% url 'create' %}">SUBSCRIBE</a> </li>
+					<li class="active"><a href="{% url 'update' %}">EDIT PROFILE</a> </li>
+					<li class="active"><a href="{% url 'contact' %}">ADD A NEW CAR</a> </li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 </div>
-
-<!--_______________________________________ Carousel__________________________________ -->
 <div class="allcontain">
 	<div id="carousel-up" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner " role="listbox">
 			<div class="item active">
 				<img src="{% static 'image/oldcar.jpg' %}" alt="oldcar">
-				<div class="carousel-caption">
-					<h2>Porsche 356</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur ,<br>
-						sed do eiusmod tempor incididunt ut labore </p>
-				</div>
 			</div>
 			<div class="item">
 				<img src="{% static 'image/porche.jpg' %}" alt="porche">
-				<div class="carousel-caption">
-					<h2>Porche</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur ,<br>
-						sed do eiusmod tempor incididunt ut labore </p>
-				</div>
 			</div>
 			<div class="item">
 				<img src="{% static 'image/benz.jpg' %}" alt="benz">
-				<div class="carousel-caption">
-					<h2>Car</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur ,<br>
-						sed do eiusmod tempor incididunt ut labore </p>
-				</div>
 			</div>
 		</div>
-
-
 		<nav class="navbar navbar-default midle-nav">
 
 <!--			<div class="starter-template text-center">-->
@@ -96,58 +69,65 @@
 				</div>
 				{% block content%}
 				{% endblock content%}
-<!--			</div>-->
 		</nav>
-
-
+	</div>
+	<div class="latestcars">
+		<h1 class="text-center">&bullet; COLLECTION GARAGE - Service for finding &bullet; <br/> a car by parsing auto sites</h1>
+	</div>
+	<br>
+	<br>
+	<div class="grid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 autoblock">
+				<div class="txthover">
+					<img src="{% static 'image/car1.jpg'%}" alt="car1">
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 autoblock">
+				<div class="txthover">
+					<img src="{% static 'image/car2.jpg' %}" alt="car2">
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 autoblock">
+				<div class="txthover">
+					<img src="{% static 'image/car3.jpg' %}" alt="car3">
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 autoblock">
+				<div class="txthover">
+					<img src="{% static 'image/car4.jpg' %}" alt="car4">
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 autoblock">
+				<div class="txthover">
+					<img src="{% static 'image/car5.jpg' %}" alt="car5">
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 autoblock">
+				<div class="txthover">
+					<img src="{% static 'image/car6.jpg' %}" alt="car6">
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 autoblock">
+				<div class="txthover">
+					<img src="{% static 'image/car7.jpg' %}" alt="car7">
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 autoblock">
+				<div class="txthover">
+					<img src="{% static 'image/car8.jpg' %}" alt="car8">
+				</div>
+			</div>
+		</div>
 	</div>
 	{% block content_auto %}
 	{% endblock content_auto %}
 </div>
-
-
-
-
-
-
-	<!-- ______________________________________________________Bottom Menu ______________________________-->
-<!--<div class="bottommenu">-->
-<!--		<div class="bottomlogo">-->
-<!--		<span class="dotlogo">&bullet;</span><img src="{% static 'image/collectionlogo1.png' %}" alt="logo1"><span class="dotlogo">&bullet;;</span>-->
-<!--		</div>-->
-
-
-
-<!--			<div class="footer">-->
-<!--				<div class="copyright">-->
-<!--				  &copy; Copy right 2020 | <a href="#">Privacy </a>| <a href="#">Policy</a>-->
-<!--				</div>-->
-<!--				<div class="atisda">-->
-<!--					 Designed by <a href="#">Vasili Kavaleu </a> -->
-<!--				</div>-->
-<!--			</div>-->
-<!--</div>-->
-
 	<div class="bottommenu">
 		<div class="bottomlogo">
 		<span class="dotlogo">&bullet;</span><img src="{% static 'image/collectionlogo1.png' %}" alt="logo1"><span class="dotlogo">&bullet;;</span>
 		</div>
-<!--		<ul class="nav nav-tabs bottomlinks">-->
-<!--			<li role="presentation" ><a href="#/" role="button">ABOUT US</a></li>-->
-<!--			<li role="presentation"><a href="#/">CATEGORIES</a></li>-->
-<!--			<li role="presentation"><a href="#/">PREORDERS</a></li>-->
-<!--			<li role="presentation"><a href="#/">CONTACT US</a></li>-->
-<!--			<li role="presentation"><a href="#/">RECEIVE OUR NEWSLETTER</a></li>-->
-<!--		</ul>-->
-<!--		<p>"Lorem ipsum dolor sit amet, consectetur,  sed do eiusmod tempor incididunt <br>-->
-<!--			eiusmod tempor incididunt </p>-->
 		 <img src="{% static 'image/line.png' %}" alt="line"> <br>
-<!-- 		 <div class="bottomsocial">
-		 	<a href="#"><i class="fa fa-facebook"></i></a>
-			<a href="#"><i class="fa fa-twitter"></i></a>
-			<a href="#"><i class="fa fa-google-plus"></i></a>
-			<a href="#"><i class="fa fa-pinterest"></i></a>
-		</div> -->
 			<div class="footer">
 				<div class="copyright">
 				  &copy; Copy right 2020 | <a href="#">Privacy </a>| <a href="#">Policy</a>
@@ -157,8 +137,6 @@
 				</div>
 			</div>
 	</div>
-
-<!--</div>-->
 
 <script type="text/javascript" src="{% static 'source/bootstrap-3.3.6-dist/js/jquery.js' %}"></script>
 <script type="text/javascript" src="{% static 'source/js/isotope.js' %}"></script>

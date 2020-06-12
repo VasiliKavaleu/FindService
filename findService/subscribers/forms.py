@@ -19,7 +19,7 @@ class LogInForm(forms.Form):
     email = forms.EmailField(label='E-mail', required=True, widget=forms.EmailInput(attrs={'class': 'form-control'}))
     password = forms.CharField(label='Пароль', widget=forms.PasswordInput(attrs={'class': 'form-control'}))
 
-    def clean_password(self, *args, **kwargs): # выполняется метод при вызове is_valid, формат наименования clean_ + переменная password
+    def clean_password(self, *args, **kwargs):
         email = self.cleaned_data.get('email')
         password = self.cleaned_data.get('password')
         if email and password:
