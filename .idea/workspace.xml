@@ -21,22 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b244554a-94ed-460f-9138-da5b5280a61e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/findApp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/findService/findApp/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/findApp/templates/findApp/list1.html" beforeDir="false" afterPath="$PROJECT_DIR$/findService/findApp/templates/findApp/list1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/findApp/templates/index1.html" beforeDir="false" afterPath="$PROJECT_DIR$/findService/findApp/templates/index1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/findApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/findService/findApp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/findApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/findService/findApp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/findService/findService/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/findService/findService/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/findService/views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/findService/static/newstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/findService/static/newstyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/findService/subscribers/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/findService/subscribers/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/subscribers/templates/subscribers/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/findService/subscribers/templates/subscribers/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/subscribers/templates/subscribers/create1.html" beforeDir="false" afterPath="$PROJECT_DIR$/findService/subscribers/templates/subscribers/create1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/subscribers/templates/subscribers/login1.html" beforeDir="false" afterPath="$PROJECT_DIR$/findService/subscribers/templates/subscribers/login1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/findService/subscribers/templates/subscribers/update1.html" beforeDir="false" afterPath="$PROJECT_DIR$/findService/subscribers/templates/subscribers/update1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/findService/subscribers/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/findService/subscribers/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/templates/base.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/findService/templates/base1.html" beforeDir="false" afterPath="$PROJECT_DIR$/findService/templates/base1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findService/templates/base2.html" beforeDir="false" afterPath="$PROJECT_DIR$/findService/templates/base2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +94,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="699" y="355" width="583" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591531451786">

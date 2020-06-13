@@ -17,11 +17,29 @@ class SubscriberCreate(CreateView):
         form_class = self.get_form_class()
         form = self.get_form(form_class)
         if form.is_valid():
-            messages.success(request, 'Данные успешно сохранены')
+            messages.success(request, 'Data saved successfully!')
             return self.form_valid(form)
         else:
-            messages.error(request, 'Проверьте правильность заполнения формы')
+            messages.error(request, 'Check that the form is filled out correctly!')
             return self.form_invalid(form)
+
+def create_user(request):
+    if request.method == "GET":
+        form = SubscriberModelForm
+        return render(request, 'subscribers/create1.html', {'form':form} )
+    elif request.method == "POST":
+        form = SubscriberModelForm(request.POST or None)
+        if form.is_valid():
+            form.save()
+            msg = 'Data saved successfully! You have subscribed to receive updates of new arrivals on choosen category.'
+            messages.success(request, msg)
+            return redirect('create')
+        messages.error(request, 'Check that the form is filled out correctly! Perhaps, this email exists afore.')
+        return render(request, 'subscribers/create1.html', {'form':form} )
+
+
+
+
 
 def login_subscriber(request):
     if request.method == "GET":
@@ -33,14 +51,14 @@ def login_subscriber(request):
             data = form.cleaned_data
             request.session['email'] = data['email']
             return redirect('update')
-        return render(request, 'subscribers/login.html', {'form': form})
+        return render(request, 'subscribers/login1.html', {'form': form})
 
 
 def update_subscriber(request):
     if request.method == 'GET' and request.session.get('email', False):
         email = request.session.get('email')
         print(email)
-        qs =  Subscriber.objects.filter(email=email).first()
+        qs = Subscriber.objects.filter(email=email).first()
         if not qs:
             return redirect('login') # TESTING
 
@@ -54,9 +72,10 @@ def update_subscriber(request):
         form = SubscriberHiddenEmailForm(request.POST or None, instance=user)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Data saved successfully.')
+            messages.success(request, 'Data saved successfully!')
             del request.session['email']
-            return redirect('login')
+            return redirect('index')
+            #return redirect('login')
         messages.error(request, 'Check that the form is filled out correctly!')
         return render(request, 'subscribers/update1.html', {'form': form})
     else:

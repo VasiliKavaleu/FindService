@@ -22,7 +22,12 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
     path('findauto', list_auto, name='list'),
-    path('create', SubscriberCreate.as_view(), name='create'),
+
+
+    #path('create', SubscriberCreate.as_view(), name='create'),
+    path('create', create_user, name='create'),
+
+
     path('login/', login_subscriber, name='login'),
     path('update/', update_subscriber, name='update'),
     path('contact/', contact_admin, name='contact'),

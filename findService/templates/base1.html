@@ -51,19 +51,24 @@
 			</div>
 		</div>
 		<nav class="navbar navbar-default midle-nav">
-
-<!--			<div class="starter-template text-center">-->
 				<div class="">
 				  <div class="col">
 					{% if messages %}
-					  <ul class="messages">
-						  {% for message in messages %}
-							<li {% if message.tags %} class="{{message.tag}}"{% endif %}>
-							  {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Important: {% endif %}
-							  {{ message }}
-							</li>
-						  {% endfor %}
-					  </ul>
+					<div class="col text-center">
+						<div class="searchtxt">
+							<ul class="messages">
+							  {% for message in messages %}
+								<li {% if message.tags %} class="{{message.tag}} msg"{% endif %}>
+								  	{% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+										<h3 class="err">{{ message }}</h3>
+									{% else %}
+								  		<h3 class="scs">{{ message }}</h3>
+									{% endif %}
+								</li>
+							  {% endfor %}
+					 		 </ul>
+						</div>
+					</div>
 					{% endif %}
 				  </div>
 				</div>
