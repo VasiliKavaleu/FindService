@@ -1,9 +1,24 @@
 import psycopg2
 import logging
 import datetime
-from findService.secret import DB_NAME, DB_USER, DB_PASSWORD, DB_HOST, MAILGUN_KEY, API, FROM_EMAIL
 from findApp.parsing import *
 import requests
+import os
+
+dir = os.path.dirname(os.path.abspath('db.py'))
+path = ''.join([dir, '/findService/secret.py'])
+if os.path.exists(path):
+    from findService.secret import DB_NAME, DB_USER, DB_PASSWORD, DB_HOST, MAILGUN_KEY, API, FROM_EMAIL
+else:
+    DB_NAME = os.environ.get('DB_NAME')
+    DB_USER = os.environ.get('DB_USER')
+    DB_PASSWORD = os.environ.get('DB_PASSWORD')
+    DB_HOST = os.environ.get('DB_HOST')
+    MAILGUN_KEY = os.environ.get('MAILGUN_KEY')
+    API = os.environ.get('API')
+    FROM_EMAIL = os.environ.get('FROM_EMAIL')
+
+
 
 today = datetime.date.today()
 

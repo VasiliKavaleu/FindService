@@ -21,8 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b244554a-94ed-460f-9138-da5b5280a61e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/findApp/templates/index1.html" beforeDir="false" afterPath="$PROJECT_DIR$/findService/findApp/templates/index1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/subscribers/templates/subscribers/login1.html" beforeDir="false" afterPath="$PROJECT_DIR$/findService/subscribers/templates/subscribers/login1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findService/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/findService/db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findService/findService/settings/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/findService/findService/settings/production.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findService/missing_url.py" beforeDir="false" afterPath="$PROJECT_DIR$/findService/missing_url.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findService/send_emails.py" beforeDir="false" afterPath="$PROJECT_DIR$/findService/send_emails.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -12,6 +12,16 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
+try:
+    from findService.secret import DB_NAME, DB_USER, DB_PASSWORD, DB_HOST, SECRET_KEY
+except:
+    DB_NAME = os.environ.get('DB_NAME')
+    DB_USER = os.environ.get('DB_USER')
+    DB_PASSWORD = os.environ.get('DB_PASSWORD')
+    DB_HOST = os.environ.get('DB_HOST')
+    SECRET_KEY = os.environ.get('SECRET_KEY')
+
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -20,12 +30,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ga8xtcu4rdc)gfd8cl71oz9msmw+gitwu^$xsun4*a=p%oduv6'
+SECRET_KEY = SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['findcarapp.herokuapp.com']
 
 
 # Application definition
@@ -78,13 +88,6 @@ WSGI_APPLICATION = 'findService.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-try:
-    from findService.secret import DB_NAME, DB_USER, DB_PASSWORD, DB_HOST
-except:
-    DB_NAME = os.environ.get('DB_NAME')
-    DB_USER = os.environ.get('DB_USER')
-    DB_PASSWORD = os.environ.get('DB_PASSWORD')
-    DB_HOST = os.environ.get('DB_HOST')
 
 DATABASES = {
     'default': {
