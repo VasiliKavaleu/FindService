@@ -21,13 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b244554a-94ed-460f-9138-da5b5280a61e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/findService/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/findService/findService/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/static/newstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/findService/static/newstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/subscribers/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/findService/subscribers/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/subscribers/templates/subscribers/update1.html" beforeDir="false" afterPath="$PROJECT_DIR$/findService/subscribers/templates/subscribers/update1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/subscribers/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/findService/subscribers/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/templates/base1.html" beforeDir="false" afterPath="$PROJECT_DIR$/findService/templates/base1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findService/templates/base2.html" beforeDir="false" afterPath="$PROJECT_DIR$/findService/templates/base2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findService/findApp/templates/index1.html" beforeDir="false" afterPath="$PROJECT_DIR$/findService/findApp/templates/index1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findService/subscribers/templates/subscribers/login1.html" beforeDir="false" afterPath="$PROJECT_DIR$/findService/subscribers/templates/subscribers/login1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../locallibrary" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -101,11 +96,11 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="699" y="355" width="583" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1591531451786" />
-    <state x="681" y="189" width="424" height="491" key="FileChooserDialogImpl" timestamp="1591739070401">
+    <state x="681" y="189" width="424" height="491" key="FileChooserDialogImpl" timestamp="1592084709193">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="495" y="141" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1589225553401" />
-    <state x="681" y="189" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1591739070401" />
+    <state x="681" y="189" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1592084709193" />
     <state x="268" y="36" width="1022" height="737" key="SettingsEditor" timestamp="1590529543869">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
