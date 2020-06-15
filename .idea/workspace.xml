@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b244554a-94ed-460f-9138-da5b5280a61e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b244554a-94ed-460f-9138-da5b5280a61e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,13 +47,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../locallibrary" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/findService/templates" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/findService/templates" />
       <recent name="$PROJECT_DIR$/findService/findApp/templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -90,10 +88,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="699" y="355" width="583" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591531451786">
+    <state x="699" y="355" width="583" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592167272070">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="699" y="355" width="583" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1591531451786" />
+    <state x="699" y="355" width="583" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1592167272070" />
     <state x="681" y="189" width="424" height="491" key="FileChooserDialogImpl" timestamp="1592084709193">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
